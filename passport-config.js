@@ -53,7 +53,7 @@ export default passport.use(
             if(user.password !== password) 
                 throw new Error('Incorrect password.')
 
-              done(null, user)
+            done(null, user)
         } catch (error) {
             done(error, null);
         }
